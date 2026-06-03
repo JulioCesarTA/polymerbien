@@ -1,0 +1,14 @@
+{
+  "name": "polymerbien",
+  "version": "1.0.0",
+  "description": "Tienda con Polymer y carrito de compras",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.5.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

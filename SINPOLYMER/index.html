@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito Sin Polymer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Tienda</h1>
+
+  <div class="productos">
+    <product-card nombre="Camiseta" precio="25">
+      <img slot="imagen" src="https://aratiendas.com/wp-content/uploads/2024/08/DSC_0044-768x511.webp" alt="Camiseta">
+      <span>Tallas: S, M, L, a</span>
+    </product-card>
+    <product-card nombre="Pantalón" precio="45">
+      <span>Tallas: S, M, L, XL</span>
+    </product-card>
+    <product-card nombre="Zapatillas" precio="80">
+      <span>Tallas: S, M, L, XL</span>
+    </product-card>
+  </div>
+
+  <cart-summary id="carrito"></cart-summary>
+
+  <script type="module" src="components/product-card.js"></script>
+  <script type="module" src="components/cart-summary.js"></script>
+
+  <script type="module">
+    document.addEventListener('agregar-item', (e) => {
+      document.getElementById('carrito').agregarItem(e.detail);
+    });
+  </script>
+
+</body>
+</html>

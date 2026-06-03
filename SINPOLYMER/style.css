@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  padding: 24px;
+  background: #f5f5f5;
+}
+
+h1 { font-size: 22px; margin-bottom: 20px; color: #222; }
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
